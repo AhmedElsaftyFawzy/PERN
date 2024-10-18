@@ -1,0 +1,318 @@
+.not-found-container {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+a {
+  color: #001f3f;
+  text-decoration: none;
+}
+a:active {
+  color: #001f3f;
+}
+
+.navbar {
+  background-color: #ead8b1;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.form-container {
+  height: 85vh;
+}
+form {
+  padding: 100px;
+}
+.forget-password {
+  height: 70vh;
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+}
+
+.forget-password h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.forget-password form {
+  display: flex;
+  flex-direction: column;
+}
+
+.forget-password label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #555;
+}
+
+.forget-password input[type="email"] {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.forget-password button {
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.forget-password button:hover {
+  background-color: #0056b3;
+}
+
+.forget-password p {
+  text-align: center;
+  margin-top: 10px;
+  color: #28a745; /* Green for success message */
+}
+.footer {
+  background-color: #ead8b1;
+  padding: 10px;
+}
+.add-product-form {
+  max-width: 600px;
+  margin: 50px auto; /* Centers the form horizontally with top margin */
+  padding: 20px 30px;
+  background-color: #f9f9f9; /* Light background */
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Title */
+.add-product-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Form Group */
+.form-group {
+  margin-bottom: 15px;
+}
+
+/* Labels */
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 600;
+  color: #555;
+}
+
+/* Input Fields and Textarea */
+.form-group input[type="text"],
+.form-group input[type="number"],
+.form-group textarea,
+.form-group input[type="file"] {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+/* Focus States */
+.form-group input[type="text"]:focus,
+.form-group input[type="number"]:focus,
+.form-group textarea:focus,
+.form-group input[type="file"]:focus {
+  border-color: #007bff; /* Blue border on focus */
+  outline: none;
+}
+
+/* Textarea Specific */
+.form-group textarea {
+  resize: vertical; /* Allow vertical resizing */
+  min-height: 100px;
+}
+
+/* Submit Button */
+.add-product-form button[type="submit"] {
+  width: auto;
+  padding: 12px;
+  background-color: #007bff; /* Blue background */
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Hover Effect for Button */
+.add-product-form button[type="submit"]:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Disabled Button */
+.add-product-form button[type="submit"]:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+/* Success and Error Messages */
+.add-product-form .message {
+  margin-top: 15px;
+  padding: 10px;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.add-product-form .message.success {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.add-product-form .message.error {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .add-product-form {
+    padding: 15px 20px;
+  }
+
+  .add-product-form h2 {
+    font-size: 24px;
+  }
+
+  .add-product-form button[type="submit"] {
+    font-size: 16px;
+    padding: 10px;
+  }
+}
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px;
+  gap: 20px; /* Space between cards */
+}
+
+.product-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 15px;
+  width: 250px; /* Fixed width for cards */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center; /* Center text in cards */
+  transition: transform 0.2s;
+}
+
+.product-card:hover {
+  transform: translateY(-5px); /* Elevate on hover */
+}
+
+.product-image {
+  max-width: 100%;
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 4px; /* Rounded image corners */
+}
+
+.btn {
+  width: 100%;
+  background-color: #007bff; /* Bootstrap primary color */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
+
+button {
+  margin-top: 10px; /* Space between buy and delete buttons */
+}
+/* Main container for the login form */
+.login-container {
+  max-width: 400px; /* Maximum width for the form */
+  margin: auto; /* Center the form on the page */
+  padding: 20px; /* Padding inside the container */
+  border: 1px solid #ccc; /* Light gray border */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  background-color: #fff; /* White background */
+}
+
+/* Error message styling */
+.error-message {
+  color: red; /* Red color for error messages */
+  margin-bottom: 15px; /* Space below the error message */
+}
+
+/* Styling for input fields */
+input[type="email"],
+input[type="password"] {
+  width: 100%; /* Full width for inputs */
+  padding: 10px; /* Padding inside the inputs */
+  margin: 10px 0; /* Margin above and below the inputs */
+  border: 1px solid #ccc; /* Light gray border */
+  border-radius: 4px; /* Rounded corners */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+/* Styling for the checkbox label */
+label {
+  display: flex; /* Use flexbox for alignment */
+  align-items: center; /* Center items vertically */
+}
+
+/* Styling for the button */
+button {
+  width: 100%; /* Full width for button */
+  padding: 10px; /* Padding inside the button */
+  background-color: #007bff; /* Bootstrap primary color */
+  color: white; /* White text color */
+  border: none; /* No border */
+  border-radius: 4px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s; /* Smooth background color change */
+}
+
+/* Button hover effect */
+button:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
+
+/* Disable button color */
+button:disabled {
+  background-color: #ccc; /* Gray color when disabled */
+}
+
+/* Register link styling */
+p {
+  text-align: center; /* Center text in paragraph */
+}
+
+/* Additional responsive adjustments */
+@media (max-width: 480px) {
+  .login-container {
+    width: 90%; /* Make the container narrower on small screens */
+  }
+}
+.hero {
+  background-image: url(assets/watercolor-beauty-concept-facebook-template_23-2150445887.jpg);
+  height: 90vh;
+}
